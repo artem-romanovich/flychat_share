@@ -3,6 +3,10 @@ Mini Two Template
 http://www.templatemo.com/preview/templatemo_345_mini_two 
 */
 
+html {
+	transform: scale(1.0);
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
