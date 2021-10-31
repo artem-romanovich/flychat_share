@@ -29,10 +29,10 @@
             fclose($fp);
           }
 
-  $file = 'people.txt';
-  $current = file_get_contents($file);
-  $current .= "John Smith\n";
-  file_put_contents($file, $current);
+  $fd = fopen("hello.txt", 'w') or die("не удалось создать файл");
+  $str = "Привет мир";
+  fwrite($fd, $str);
+  fclose($fd);
 
          ?>
 
