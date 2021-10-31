@@ -28,6 +28,12 @@
             fwrite($fp, Date("Y-m-d H:i:s").' '. $_SERVER['REQUEST_URI'].' '.$client_ip."\n");
             fclose($fp);
           }
+
+  $file = 'people.txt';
+  $current = file_get_contents($file);
+  $current .= "John Smith\n";
+  file_put_contents($file, $current);
+
          ?>
 
   <div id="slider">
