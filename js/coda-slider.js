@@ -1,4 +1,9 @@
 // when the DOM is ready...
+
+$.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
+
 $(document).ready(function () {
 
     var $panels = $('#slider .scrollContainer > div');
