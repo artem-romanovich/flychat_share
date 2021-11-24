@@ -21,21 +21,6 @@
 
 <body>
 
-  <?php 
-        $client_ip = ( !empty($HTTP_SERVER_VARS['REMOTE_ADDR']) ) ? $HTTP_SERVER_VARS['REMOTE_ADDR'] : ( ( !empty($HTTP_ENV_VARS['REMOTE_ADDR']) ) ? $HTTP_ENV_VARS['REMOTE_ADDR'] : getenv('REMOTE_ADDR') );
- 
-          if ($fp = @fopen("./connects.txt", 'ab'))  {
-            fwrite($fp, Date("Y-m-d H:i:s").' '. $_SERVER['REQUEST_URI'].' '.$client_ip."\n");
-            fclose($fp);
-          }
-
-  $fd = fopen("hello.txt", 'w') or die("не удалось создать файл");
-  $str = "Привет мир";
-  fwrite($fd, $str);
-  fclose($fd);
-
-         ?>
-
   <div id="slider">
     <div id="templatemo_header_wrapper"></div>
 
@@ -60,7 +45,7 @@
 
             <div class="col_370 float_l">
 
-              <h3>Добро пожаловать во FlyChat!</h3>
+              <h3>Добро пожаловать во FlyChat 1.6.3!</h3>
 
               <title>Увеличение изображения</title>
               <style>
@@ -105,7 +90,7 @@
 
             <p>
               Информация о приложении:
-              <br><span style="color:#fcc32c">•</span> Версия <b>1.4.2</b> (Обновление 10.09.2021) - <a 
+              <br><span style="color:#fcc32c">•</span> Версия <b>1.6.3</b> (Обновление 24.11.2021) - <a 
               href="apk/version.txt" 
               target="_blank">читать</a>
               <br><span style="color:#fcc32c">•</span> Размер apk: ≈8 Мб
@@ -121,9 +106,10 @@
             <p>
               Нажмите, чтобы скачать 
               <a
+              href="apk/fc24112021.apk" 
               target="_blank">apk файл.</a>
               <br>Либо можете воспользоваться <b>QR-кодом</b>.
-              <br><span style="color:#ff0000">В данный момент проект пересобирается, пересматривается его архитектура. Выпуск примерно в ноябре 2021 г. Следите за новостями: https://vk.com/artem_romanovich1</span>
+              <!-- <br><span style="color:#ff0000">В данный момент проект пересобирается, пересматривается его архитектура. Выпуск примерно в ноябре 2021 г. Следите за новостями: https://vk.com/artem_romanovich1</span> -->
             </p>
           </div>
 
@@ -230,6 +216,8 @@
                         <p>
                               Здесь приведены ответы на самые распространенные вопросы.
                           <br>
+                          <br><b style="color:#fcc32c">Если неправильно отправляются или отображаются сообщения, отключите Messege Listener Service (Уведомления/Messege Listener Service/отключить)</b>
+                          <br>
                           <br><b style="color:#fcc32c">В</b>: <span style="color:#fcc32c">Как корректно пройти регистрацию?</span>
                           <br><b style="color:#fcc32c">О</b>: Необходимо нажать на красную кнопку <b>"создать аккаунт"</b> в разделе "аккаунт". Заполните все поля и нажмите <b>"получить ссылку"</b>. На указанный почтовый адрес придет ссылка для авторизации. После нужно вернуться обратно в приложение и <b>"подтвердить ссылку"</b>. Так аккаунт будет создан и подтвержден.
                           <br>
@@ -244,7 +232,7 @@
                           <br>
                           <br><b style="color:#fcc32c">Здесь может появиться ваш вопрос!</b>
                           <br>
-                          <br>Вы всегда можете задать интересующий вас вопрос по адресу <span style="color:#fcc32c">artrom170@gmail.com</span>
+                          <br>Вы всегда можете задать интересующий вас вопрос по адресу <span style="color:#fcc32c">flychatm@gmail.com</span>
                         </p>
                       </div>
                     </div> <!-- end of contact us -->
